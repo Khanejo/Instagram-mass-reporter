@@ -42,9 +42,9 @@ for line in range(len(file)+1):
 
     web.click(text='Report User')
 
-    time.sleep(0.5)
+    time.sleep(1.5)
 
-    web.click(xpath="/html/body/div[4]/div/div/div[2]/div/div/div/div[3]/button[1]")
+    web.click(xpath="/html/body/div[4]/div/div/div/div[2]/div/div/div/div[3]/button[1]")
 
     time.sleep(0.5)
 
