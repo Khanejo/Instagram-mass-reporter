@@ -2,10 +2,30 @@ import time
 from webbot import *
 import pyautogui
 
-print("Put list with accounts in same folder as this prog••••••••••ram and call it acc.txt")
-username = input("Username: ")
+import argparse
+import sys
 
-a = open('acc.txt', "r").readlines()
+# To parse the arguments
+def getOptions(args=sys.argv[1:]):
+
+    parser = argparse.ArgumentParser(description="This bot helps users to mass report accounts with clickbaits or objectionable material.")
+    parser.add_argument("-u", "--username", type = str, default = "", help = "Username to report.")
+    parser.add_argument("-f", "--file", type = str, default = "acc.txt", help = "Accounts list ( Defaults to acc.txt in program directory ).")
+
+    options = parser.parse_args(args)
+
+    return options
+
+
+args = getOptions()
+
+username = args.username
+acc_file = args.file
+
+if username == "" :
+	username = input("Username: ")
+
+a = open(acc_file, "r").readlines()
 file = [s.rstrip()for s in a]
 file.reverse()
 
