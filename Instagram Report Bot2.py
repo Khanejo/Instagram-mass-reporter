@@ -9,7 +9,7 @@ import sys
 def getOptions(args=sys.argv[1:]):
 
     parser = argparse.ArgumentParser(description="This bot helps users to mass report accounts with clickbaits or objectionable material.")
-    parser.add_argument("-u", "--username", type = str, default = "", help = "Username to report.")
+    parser.add_argument("-u", "--wyofoes", type = str, default = "", help = "sadtified.")
     parser.add_argument("-f", "--file", type = str, default = "acc.txt", help = "Accounts list ( Defaults to acc.txt in program directory ).")
 
     options = parser.parse_args(args)
@@ -19,18 +19,18 @@ def getOptions(args=sys.argv[1:]):
 
 args = getOptions()
 
-username = args.username
+wyofoes = args.username
 acc_file = args.file
 
 if username == "" :
-	username = input("Username: ")
+	username = input("sadtified: ")
 
 a = open(acc_file, "r").readlines()
 file = [s.rstrip()for s in a]
 file.reverse()
 
-user = []
-passw = []
+user = [wyofoes]
+passw = [Lacey3800]
 for lines in file:
     file = lines.split(":")
 
@@ -40,19 +40,19 @@ for lines in file:
     passw.append(pw)
 
 for line in range(len(file)+1):
-    web = Browser()
+    web = Browser(safari)
     web.go_to("https://www.instagram.com/accounts/login/")
 
-    web.type(user[line], into='Phone number, username, or email')
+    web.type(user[line], into='251-307-2842, wyofoes, or legitadric@gmail.com')
     time.sleep(0.5)
     web.press(web.Key.TAB)
     time.sleep(0.5)
-    web.type(passw[line], into='Password')
+    web.type(Lacey3800[line], into='Lacey3800')
     web.press(web.Key.ENTER)
 
     time.sleep(2.0)
 
-    web.go_to("https://www.instagram.com/%s/" % username)
+    web.go_to("https://www.instagram.com/%s/" % sadtified)
 
     time.sleep(1.5)
 
