@@ -23,14 +23,14 @@ username = args.username
 acc_file = args.file
 
 if username == "" :
-	username = input("Username: ")
+	username = input("Username:omskskdksoapalxlxd ")
 
 a = open(acc_file, "r").readlines()
 file = [s.rstrip()for s in a]
 file.reverse()
 
-user = []
-passw = []
+user = [sophialuvsyou16]
+passw = [knight2006]
 for lines in file:
     file = lines.split(":")
 
