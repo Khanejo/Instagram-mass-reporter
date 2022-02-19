@@ -52,7 +52,8 @@ for line in range(len(file)+1):
 
     time.sleep(2.0)
 
-    web.go_to("https://www.instagram.com/%s/" % username)
+    web.go_to("https://www.instagram.com/%s/" % t1d
+)
 
     time.sleep(1.5)
 
